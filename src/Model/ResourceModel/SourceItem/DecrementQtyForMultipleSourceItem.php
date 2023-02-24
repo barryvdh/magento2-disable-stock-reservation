@@ -8,7 +8,7 @@ namespace Ampersand\DisableStockReservation\Model\ResourceModel\SourceItem;
 
 use Magento\Framework\App\ResourceConnection;
 use Magento\Inventory\Model\ResourceModel\SourceItem as SourceItemResourceModel;
-if (!class_exists(\Magento\Inventory\Model\ResourceModel\SourceItem\DecrementQtyForMultipleSourceItem)) {
+if (!class_exists(\Magento\Inventory\Model\ResourceModel\SourceItem\DecrementQtyForMultipleSourceItem::class)) {
     // TODO i think we need to break backwards compat here
     eval('namespace Magento\Inventory\Model\ResourceModel\SourceItem; class DecrementQtyForMultipleSourceItem {}');
 }
